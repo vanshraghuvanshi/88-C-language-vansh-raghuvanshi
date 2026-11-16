@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    
+    if (a > 0 || b > 0) {
+        printf("At least one of them is positive.\n");
+    } 
+    else if (a < 0 && b < 0) {
+        printf("Both of them are negative.\n");
+    } 
+    else {
+        printf("Neither is positive, and at least one is zero.\n");
+    }
+    
+    return 0;
+}
